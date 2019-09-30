@@ -7,16 +7,16 @@ from selenium.webdriver.common.by import By
 '''
 class LoginPage(BasePage):
     #用户名
-    userName_loc = (By.ID,"username")
+    userName_loc = (By.ID, "username")
 
     #密码
-    passWord_loc = (By.ID,"password")
+    passWord_loc = (By.ID, "password")
 
     #图片验证码
     imageCode_loc = (By.CSS_SELECTOR,"input.ant-input:nth-child(1)")
 
     #登录按钮
-    login_loc = (By.CSS_SELECTOR,".ant-btn")
+    login_loc = (By.CSS_SELECTOR, ".ant-btn")
 
     #错误提示问题
     err_loc = (By.CSS_SELECTOR, ".ant-message > span:nth-child(1)")
@@ -28,16 +28,16 @@ class LoginPage(BasePage):
     logout2_loc = (By.CSS_SELECTOR, "li.ant-dropdown-menu-item:nth-child(2)")
 
     #登录成功油宝，判断登录是否成功
-    youbao_loc=(By.CSS_SELECTOR,".ant-avatar > img:nth-child(1)")
+    youbao_loc=(By.CSS_SELECTOR, ".ant-avatar > img:nth-child(1)")
 
     # 通过继承覆盖（Overriding）方法：如果子类和父类的方法名相同，优先用子类自己的方法。
     # 打开网页
     def open(self):
-        self._open(self.url,self.pagetitle)
+        self._open(self.url, self.pagetitle)
 
     #输入用户名
     def input_userName(self, userName):
-        self.send_keys(userName,*self.userName_loc)
+        self.send_keys(userName, *self.userName_loc)
 
     #输入验证码
     def input_passWord(self, passWord):
@@ -45,7 +45,7 @@ class LoginPage(BasePage):
 
     #输入验证码
     def input_imageCode(self, imageCode):
-        self.send_keys(imageCode,*self.imageCode_loc)
+        self.send_keys(imageCode, *self.imageCode_loc)
 
     #登录按钮
     def login(self):
@@ -65,6 +65,3 @@ class LoginPage(BasePage):
         return self.isElementExists(*self.youbao_loc)
 
 
-        
-        
-    

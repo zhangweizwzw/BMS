@@ -15,7 +15,7 @@ from common.sendEmail import SendEmail
 # suite.addTest(AddCompany("test_addCompany"))
 
 if __name__=="__main__":
-    suite=unittest.TestSuite()
+    suite = unittest.TestSuite()
     suite.addTest(AddDrvier("test_addDriver"))
 
 

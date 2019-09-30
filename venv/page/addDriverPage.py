@@ -7,28 +7,28 @@ class AddDrvierPage(BasePage):
     jichu_loc = (By.CSS_SELECTOR, "li.ant-menu-submenu:nth-child(2) > div:nth-child(1) > span:nth-child(1) > span:nth-child(2)")
 
     #左侧司机管理
-    driverManage_loc= (By.CSS_SELECTOR, "li.ant-menu-item:nth-child(2) > a:nth-child(1)")
+    driverManage_loc = (By.CSS_SELECTOR, "li.ant-menu-item:nth-child(2) > a:nth-child(1)")
 
     #新增按钮
-    addDriver_loc=(By.CSS_SELECTOR, "button.ant-btn-background-ghost:nth-child(1)")
+    addDriver_loc = (By.CSS_SELECTOR, "button.ant-btn-background-ghost:nth-child(1)")
 
     #司机手机号
-    employeeMobile_loc= (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > input:nth-child(1)")
+    employeeMobile_loc = (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > input:nth-child(1)")
 
     #司机姓名
-    employeeName_loc= (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > input:nth-child(1)")
+    employeeName_loc = (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > input:nth-child(1)")
 
 
     #所属分公司下拉
-    shuComp_loc= (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > i:nth-child(1) > svg:nth-child(1)")
+    shuComp_loc = (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > i:nth-child(1) > svg:nth-child(1)")
     #选择第一个
-    dian_click_loc=(By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)")
+    dian_click_loc = (By.CSS_SELECTOR, "div.modelStyle___YmdHO:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)")
 
     #备注
-    remark_loc= (By.ID, "remark")
+    remark_loc = (By.ID, "remark")
 
     #确定按钮
-    sure_loc= (By.CSS_SELECTOR, ".ant-modal-footer > div:nth-child(1) > button:nth-child(2)")
+    sure_loc = (By.CSS_SELECTOR, ".ant-modal-footer > div:nth-child(1) > button:nth-child(2)")
 
     # 通过继承覆盖（Overriding）方法：如果子类和父类的方法名相同，优先用子类自己的方法。
     # 打开网页
@@ -48,11 +48,11 @@ class AddDrvierPage(BasePage):
         self.click_element(*self.driverManage_loc)
 
     #输入司机手机号
-    def sendK_employeeMobile(self,eMobile):
+    def sendK_employeeMobile(self, eMobile):
         self.send_keys(eMobile, *self.employeeMobile_loc)
 
     #输入司机姓名
-    def sendK_employeeName(self,employeeName):
+    def sendK_employeeName(self, employeeName):
         self.send_keys(employeeName, *self.employeeName_loc)
 
     #选择所属分公司

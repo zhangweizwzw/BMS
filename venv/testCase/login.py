@@ -34,7 +34,7 @@ class Login(BaseCase):
                 sleep(2)
                 loginPage.logout()
             else:
-                self.assertEqual("登录失败",message, "登录成功用例执行失败")
+                self.assertEqual("登录失败", message, "登录成功用例执行失败")
         else:
             errorlog = loginPage.error_log()
             sleep(2)
@@ -50,7 +50,7 @@ class Login(BaseCase):
         loginPage = LoginPage(self.driver, self.url, u"login")
         loginPage.open()
         for i in data:
-            self.doLogin(loginPage,i)
+            self.doLogin(loginPage, i)
 
 
 if __name__ == "__main__":

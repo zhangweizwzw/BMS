@@ -23,7 +23,7 @@ class AddCar(BaseCase):
         addCarPage.click_addCar()
         addCarPage.sele_diqu()
         addCarPage.sele_xuhao()
-        addCarPage.sendK_carNo(random.randint(10000,99999))
+        addCarPage.sendK_carNo(random.randint(10000, 99999))
         addCarPage.sele_carType()
         addCarPage.click_sure()
 

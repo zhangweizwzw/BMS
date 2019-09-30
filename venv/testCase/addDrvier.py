@@ -26,7 +26,7 @@ class AddDrvier(BaseCase):
         addDriverPage.sendK_employeeMobile(CommonFun().getPhone())
         addDriverPage.sendK_employeeName(CommonFun().getName()+"自动化测试")
         addDriverPage.sele_Company()
-        addDriverPage.sendk_remark(CommonFun.getChar(random.randint(5,10)))
+        addDriverPage.sendk_remark(CommonFun.getChar(random.randint(5, 10)))
         addDriverPage.click_sure()
 
     def test_addDriver(self):

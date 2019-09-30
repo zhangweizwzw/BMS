@@ -2,14 +2,14 @@ import random
 import unittest
 
 class CommonFun(unittest.TestCase):
-    def getChar(self,times=1):
-        tchar=""
+    def getChar(self, times=1):
+        tchar = ""
         for i in range(times):
             head = random.randint(0xb0, 0xf7)
             body = random.randint(0xa1, 0xf9)  # 在head区号为55的那一块最后5个汉字是乱码,为了方便缩减下范围
             val = f'{head:x}{body:x}'
             str = bytes.fromhex(val).decode('gb2312')
-            tchar=tchar+str
+            tchar = tchar+str
         return tchar
         # print(tchar)
 
@@ -24,7 +24,7 @@ class CommonFun(unittest.TestCase):
     def getPhone(self):
         prelist = ["130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "147", "150", "151", "152",
                    "153", "155", "156", "157", "158", "159", "186", "187", "188"]
-        tele=random.choice(prelist) + "".join(random.choice("0123456789") for i in range(8))
+        tele = random.choice(prelist) + "".join(random.choice("0123456789") for i in range(8))
         return tele
 
 if __name__ == "__main__":

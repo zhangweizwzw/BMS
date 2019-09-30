@@ -35,7 +35,7 @@ class AddCompany(BaseCase):
         else:
             addCompany.click_forbid()
 
-        addCompany.sendK_remark(CommonFun().getChar(random.randint(5,10)))
+        addCompany.sendK_remark(CommonFun().getChar(random.randint(5, 10)))
         addCompany.click_confirm()
 
 

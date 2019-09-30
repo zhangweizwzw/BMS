@@ -8,26 +8,26 @@ import unittest
 '''
 class BasePage(object):
 
-    def __init__(self, driver,url,pagetitle):
+    def __init__(self, driver, url, pagetitle):
         self.driver=driver
         self.url=url
         self.pagetitle=pagetitle
 
     #根据页面title判断进入页面是否正确
-    def onPage(self,pageTitle):
+    def onPage(self, pageTitle):
         return pageTitle in self.driver.current_url
 
     #定义私有方法，
-    def _open(self,url,pagetitle):
+    def _open(self, url, pagetitle):
         self.driver.get(url)
         self.driver.maximize_window()
 
 
     #调用_open方法，打开浏览器
     def open(self):
-        self._open(self.url,self.pagetitle)
+        self._open(self.url, self.pagetitle)
 
-    def isElementExists(self,*loc):
+    def isElementExists(self, *loc):
         try:
             WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(loc))
             # return self.driver.find_element(*loc)
@@ -45,7 +45,7 @@ class BasePage(object):
             print(u" %s 页面中未能找到 %s 元素" % (self, loc))
 
     # 重写定义send_keys方法
-    def send_keys(self,vaule, *loc, clear_first=True):
+    def send_keys(self,vaule, *loc, clear_first = True):
         try:
             if clear_first:
                 self.find_element(*loc).clear()
@@ -65,7 +65,7 @@ class BasePage(object):
 
 
     #重写定义获取text
-    def get_text(self,*loc):
+    def get_text(self, *loc):
         try:
             return self.find_element(*loc).text
         except:
