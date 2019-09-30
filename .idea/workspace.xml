@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b2860a-3ce8-45c8-8b20-61767cb8564e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/common/commonVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/common/commonVar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/common/commonfun.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/common/commonfun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/page/addCarPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/page/addCarPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/page/addCompanyPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/page/addCompanyPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/page/addDriverPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/page/addDriverPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/page/basePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/page/basePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/page/loginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/page/loginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testCase/addCar.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testCase/addCar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testCase/addCompany.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testCase/addCompany.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testCase/addDrvier.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testCase/addDrvier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testCase/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testCase/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/testCase/testSuite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/testCase/testSuite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/venv/common/commonVar.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -566,9 +555,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -582,7 +570,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -911,7 +899,7 @@
     <entry file="file://$PROJECT_DIR$/venv/common/commonVar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
