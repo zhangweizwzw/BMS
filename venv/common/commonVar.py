@@ -21,5 +21,5 @@ class CommonVar():
     # 邮件的标题
     SUBJECT='BMS自动化结果测试'
     # 发件人的邮箱地址
-    EM_USERNAME = 'zhangwei_7154@163.com'
+    EM_USERNAME = 'zhangwei_7154@163.com' 
     EM_PASSWORD = 'zhangwei19940624'
